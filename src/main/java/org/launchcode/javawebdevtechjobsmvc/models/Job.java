@@ -1,5 +1,6 @@
 package org.launchcode.javawebdevtechjobsmvc.models;
 
+import java.util.HashMap;
 import java.util.Objects;
 
 public class Job {
@@ -72,6 +73,18 @@ public class Job {
         return Objects.hash(id);
     }
 
+
+    public HashMap<String, String> fuckIt(){
+        HashMap<String,String> sigh = new HashMap<>() ;
+        sigh.put("ID",id+"");
+        sigh.put("Name",name);
+        sigh.put("Employer",employer.toString());
+        sigh.put("Location", location.toString());
+        sigh.put("Position Type", positionType.toString());
+        sigh.put("Skills", coreCompetency.toString());
+
+        return sigh;
+    }
 
     // Getters and setters.
 

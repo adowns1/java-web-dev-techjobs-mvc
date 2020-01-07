@@ -29,7 +29,7 @@ table.job-listing {
     width: 80%;
 }
 
-table.job-listing td:first-child {
+table.job-listing td p {
     font-weight: bold;
 }
 

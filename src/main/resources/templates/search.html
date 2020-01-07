@@ -37,7 +37,22 @@
     <hr />
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
+    <table class = "job-listing">
+        <tr>
+            <th>Job Listings </th>
+        </tr>
+        <tr th:each="job : ${jobs}">
+            <td  >
+                <th:block th:each="value : ${job.fuckIt().entrySet()}">
+                    <p th:text="${value.key}+ ': ' +${value.value}"> </p>
 
+                </th:block>
+
+
+
+            </td>
+        </tr>
+    </table>
 </div>
 
 </body>
